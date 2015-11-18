@@ -6,7 +6,7 @@ game(){
     local score=0
     for loop in ${roll}
     do
-        score=$((${score}+${loop}))
+        score=$((score+loop))
     done
     echo ${score}
 }
