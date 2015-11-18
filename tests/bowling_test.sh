@@ -16,3 +16,7 @@ spare_test(){
     local score=($(game "4 6 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"))
     assertion__equal "'37'" "'${score[@]}'"
 }
+strike_test(){
+    local score=($(game "10 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"))
+    assertion__equal "'38'" "'${score[@]}'"
+}
