@@ -20,3 +20,7 @@ strike_test(){
     local score=($(game "10 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"))
     assertion__equal "'38'" "'${score[@]}'"
 }
+full_strike_test(){
+    local score=($(game "10 10 10 10 10 10 10 10 10 10 10 10"))
+    assertion__equal "'300'" "'${score[@]}'"
+}
