@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.."; pwd)"
+
+echo "Shell check"
+shellcheck tests/*
+shellcheck sources/*
+
+"${ROOT_DIR}/tests/lib/shebang-unit" "${ROOT_DIR}/tests"
+
+if [ $? -eq 0 ]
+then
+    echo "Git commit"
+    git add .
+    git commit -m'tests succeed'
+fi
