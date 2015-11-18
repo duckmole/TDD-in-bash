@@ -6,5 +6,5 @@ first_test(){
 }
 no_pine_test(){
     local score=($(game "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"))
-    assertion__equal "0" "${score[@]}"
+    assertion__equal "0" "${score}"
 }

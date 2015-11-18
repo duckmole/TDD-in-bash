@@ -2,5 +2,5 @@ test(){
     echo "test"
 }
 game(){
-    echo "0"
+    echo "0 100"
 }
