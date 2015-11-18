@@ -11,7 +11,13 @@ game(){
     done
     for frame in $(seq 0 9)
     do
-        score=$((score+array[frame_index]+array[frame_index+1]))
+        local score_frame=$((array[frame_index]+array[frame_index+1]))
+        if [ $score_frame -eq 10 ]
+        then
+            score=$((score+score_frame+array[frame_index+2]))
+        else
+            score=$((score+score_frame))
+        fi
         frame_index=$((frame_index+2))
     done
     echo ${score}

@@ -12,7 +12,7 @@ one_pine_test(){
     local score=($(game "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"))
     assertion__equal "'20'" "'${score[@]}'"
 }
-#spare_test(){
-#    local score=($(game "4 6 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"))
-#    assertion__equal "'37'" "'${score[@]}'"
-#}
+spare_test(){
+    local score=($(game "4 6 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"))
+    assertion__equal "'37'" "'${score[@]}'"
+}
