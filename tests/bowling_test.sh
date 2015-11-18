@@ -8,3 +8,7 @@ no_pine_test(){
     local score=($(game "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"))
     assertion__equal "'0'" "'${score[@]}'"
 }
+one_pine_test(){
+    local score=($(game "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"))
+    assertion__equal "'20'" "'${score[@]}'"
+}
