@@ -4,3 +4,7 @@ source "${ROOT_DIR}/sources/bowling.sh"
 first_test(){
     assertion__equal test "$(test)"
 }
+no_pine_test(){
+    local score=($(game "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"))
+    assertion__equal "0" "${score}"
+}
