@@ -4,6 +4,8 @@ Dépôt du code de la session de **TDD in Bash** réalisée le Mercredi 18 novem
 
 [pastis.rb]: http://pastisrb.org/2015/10/28/pastis-rb-edition-35.html
 
+Lors de cette session un commit était effectué automatiquement lors que les tests passaient.
+
 ## Exercice
 Coder le fameux bowling kata
 
