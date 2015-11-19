@@ -20,3 +20,4 @@ Cette session a été enregistrée : [Tdd in Bash][]
 * [ShellCheck][] is a static analysis and linting tool for sh/bash scripts.
 
 [shebang-unit]: https://github.com/arpinum-oss/shebang-unit
+[ShellCheck]: http://www.shellcheck.net/
